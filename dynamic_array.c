@@ -1,18 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
+//Declaring a structure vector
 typedef struct{
     int *data;
     int size;
     int capacity;
 }vector;
 
+//Vector initialization functions, needs to be runned to alocate the memory for an array
 void vector_init (vector* V){
     V->size = 0;
     V->capacity = 4;
     V->data = malloc(V->capacity*sizeof(int));
 }
 
+//Placing a value in the end of a vector
 void vector_push (vector* V, int n){
     if (V->size == V->capacity){
         V->capacity *= 2;
@@ -22,6 +27,7 @@ void vector_push (vector* V, int n){
     V->size+=1;
 }
 
+//Deleting value from an end of a vector
 void vector_pop(vector* V){
     if (V->size>0){
         V->size-=1;
@@ -30,6 +36,8 @@ void vector_pop(vector* V){
     }
 }
 
+
+//Printing a vector as row
 void vector_print(vector *V){
     int i;
     for(i=0; i<V->size; i++){
@@ -38,6 +46,7 @@ void vector_print(vector *V){
     printf("\n");
 }
 
+//Accessing value by index
 int vector_get(vector* v, int index){
     if (index>=0 && index < v->size){
         return v->data[index];
@@ -47,6 +56,7 @@ int vector_get(vector* v, int index){
     }
 }
 
+//Setting value by index
 void vector_set(vector *v, int index, int value){
     if (index>=0 && index < v->size){
         v->data[index]=value;
@@ -55,6 +65,7 @@ void vector_set(vector *v, int index, int value){
     }
 }
 
+//Check if contains
 int vector_contains(vector *v, int value){
     for( int i =0; i < v->size; i++){
         if (v->data[i]==value){
@@ -63,6 +74,14 @@ int vector_contains(vector *v, int value){
     }
     return 0;
 }
+//To complete
+void vector_insert(vector *v, int index, int value){
+    return;
+}
+void vector_delete_at_index (vector *v, int index){
+    return;
+}
+//Destructor, frees memory after deletion
 void vector_free(vector *v){
     free(v->data);
     v->data = NULL;
