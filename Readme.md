@@ -13,4 +13,5 @@ To compile and run the tests for any structure, navigate to its folder and use t
 cd vector
 make run
 ```
-🛠 PrerequisitesCompiler: GCC (MinGW for Windows).Build Tool: GNU Make (mingw32-make on Windows).
+🛠 PrerequisitesCompiler: GCC (MinGW for Windows).
+Build Tool: GNU Make (mingw32-make on Windows).
