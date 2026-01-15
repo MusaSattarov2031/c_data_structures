@@ -9,8 +9,8 @@ A growable array that mimics the behavior of a Python list or C++ std::vector.
 - Memory Management: Uses malloc, realloc, and free for heap safety.
 #### 🚀 How to Run
 To compile and run the tests for any structure, navigate to its folder and use the provided Makefile:
-\bash
+'''bash
 cd vector
 make run
-\
+'''
 🛠 PrerequisitesCompiler: GCC (MinGW for Windows).Build Tool: GNU Make (mingw32-make on Windows).
