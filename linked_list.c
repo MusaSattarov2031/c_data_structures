@@ -1,8 +1,8 @@
-#import <stdio.h>
-#import <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 
-typedef struct{
+typedef struct node{
     int value;
     struct node *next;
 }node;
@@ -10,4 +10,7 @@ typedef struct{
 void node_init(node *n, int value, node *next_node){
     n->value = value;
     n->next = next_node;
+}
+
+int main(){
 }
