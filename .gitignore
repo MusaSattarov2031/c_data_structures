@@ -1,1 +1,9 @@
+#Windows executables
 *.exe
+
+#Linux executables (specific names)
+vector_test
+list_test
+
+#Generic object files
+*.
