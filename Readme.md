@@ -20,7 +20,7 @@ This section contains a custom implementation of a Singly Linked List in C. Unli
 ### 🚀 How to Run
 To compile and run the tests for any structure, navigate to its folder and use the provided Makefile:
 ```bash
-cd vector
+#navigate to needed folder
 make
 make run
 #to clean compiled file
