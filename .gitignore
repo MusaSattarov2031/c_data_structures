@@ -6,4 +6,4 @@ vector_test
 list_test
 
 #Generic object files
-*.
+*.o

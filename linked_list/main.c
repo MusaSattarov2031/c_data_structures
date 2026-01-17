@@ -18,12 +18,16 @@ int main() {
     printf("Current List: ");
     list_print(head); 
     printf("\n");
+
+    //Test inserting
     printf("Test Inserting 25\n");
     list_insert(&head, 1, 25);
     printf("Current List: ");
     list_print(head); 
     printf("\n");
 
+
+    //Test setting
     printf("Test setting:\n");
     list_set(&head, 1, 27);
     list_set(&head, 0, 50);
@@ -32,21 +36,37 @@ int main() {
     list_print(head); 
     printf("\n");
 
+    //Test removing
+    printf("Test: Removing indexes 1, 2, 3\n");
+    list_remove(&head, 1);
+    list_remove(&head, 1);
+    list_remove(&head, 1);
+    printf("Current List: ");
+    list_print(head); 
+    printf("\n");
+
 
 
     // 4. Test Information methods
     printf("List Size: %d\n", list_size(head));
-    //printf("Value at index 1: %d\n", list_get(head, 1));
+    printf("Value at index 0: %d\n", list_get(head, 0));
 
     // 5. Test Search
-    //int search_val = 20;
-    //int index = list_find(head, search_val);
-    //if (index != -1) {
-    //    printf("Value %d found at index %d\n", search_val, index);
-    //} else {
-    //  printf("Value %d not found\n", search_val);
-    //}
-    
+    printf("Test search\n");
+    int search_val = 20;
+    int index = list_find(head, search_val);
+    if (index != -1) {
+        printf("Value %d found at index %d\n", search_val, index);
+    } else {
+      printf("Value %d not found\n", search_val);
+    }
+    list_push_back(&head, 20);
+    index = list_find(head, search_val);
+    if (index != -1) {
+        printf("Value %d found at index %d\n", search_val, index);
+    } else {
+      printf("Value %d not found\n", search_val);
+    }
     // 6. Test Cleanup (Memory Management)
     printf("\nFreeing memory...\n");
     list_free(&head);

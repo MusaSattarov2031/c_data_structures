@@ -20,26 +20,26 @@ typedef struct node{
 }node;
 
 /*Node && lyfecycle management*/
-node* create_node(int value);
-void list_free(node **head);
+node* create_node(int value);//Done
+void list_free(node **head);//Done
 
 /*Insertion & Altering*/
-void list_push_front(node **head, int value);
-void list_push_back(node **head, int value);
-void list_insert(node **head, int index, int value);
-void list_set(node **head, int index, int value);
+void list_push_front(node **head, int value);//Done
+void list_push_back(node **head, int value);//Done
+void list_insert(node **head, int index, int value);//Done
+void list_set(node **head, int index, int value);//Done
 
 /*Deletion*/
-void list_pop_front(node **head);
+void list_pop_front(node **head);//Done
 void list_remove(node **head, int index);
 
 /*Search & Info*/
 int list_get(node *head, int index);
 int list_find(node *head, int value);
-int list_size(node *head);
-int list_valid_index(node *head, int index);
+int list_size(node *head);//Done
+int list_valid_index(node *head, int index);//Done
 
 /*Display*/
-void list_print(node *head);
+void list_print(node *head);//Done
 
 #endif
