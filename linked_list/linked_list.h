@@ -31,11 +31,11 @@ void list_set(node **head, int index, int value);//Done
 
 /*Deletion*/
 void list_pop_front(node **head);//Done
-void list_remove(node **head, int index);
+void list_remove(node **head, int index);//Done
 
 /*Search & Info*/
-int list_get(node *head, int index);
-int list_find(node *head, int value);
+int list_get(node *head, int index);//Done
+int list_find(node *head, int value);//Done
 int list_size(node *head);//Done
 int list_valid_index(node *head, int index);//Done
 
