@@ -28,7 +28,7 @@ A bidirectional linear data structure where each node contains pointers to both 
 ### 🚀 How to Run
 To compile and run the tests for any structure, navigate to its folder and use the provided Makefile:
 ```bash
-cd vector
+#navigate to needed folder
 make
 make run
 #to clean compiled file
