@@ -84,7 +84,7 @@ void dlist_insert(dnode **head, int index, int value){
     new_node->next= prev->next;
     new_node->prev = prev;
     if (prev->next != NULL) {
-    prev->next->prev = new_node; 
+        prev->next->prev = new_node; 
     }
     prev->next = new_node;
 }

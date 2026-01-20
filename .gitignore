@@ -5,6 +5,7 @@
 vector_test
 list_test
 doubly_list_test
+stack_test
 
 #Generic object files
 *.o

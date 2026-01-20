@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -g
-TARGET = doubly_list_test
-SRCS = main.c doubly_linked_list.c
+TARGET = stack_test
+SRCS = main.c stack.c
 
 all: $(TARGET)
 $(TARGET): $(SRCS)
